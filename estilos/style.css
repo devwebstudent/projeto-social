@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background-image: url('../imagens/fundo-madeira.jpg');
+    background-image: url('../imagens/fundo-madeira.jpg'); /* colocamos nosso fundo de madeira no body */
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,17 +21,28 @@ body {
 }
 
 main {
-    position: relative;
+    position: relative; /* pra gente organizar a centralização */
     height: 100vh;    
 }
 
 section#telefone {
-    position: absolute;
+    /* abaixo as configurações do celular, que ficará no meio da tela */
+    position: absolute; /* pra gente centralizar nosso telefone */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* independente do tamanho da tela, nosso telefone estará sempre no meio da tela */
+    
     width: 311px;
     height: 627px;    
     background-image: url('../imagens/frame-iphone.png');
     background-repeat: no-repeat;
+}
+
+iframe#tela {
+    /*configurações do tamanho do iframe*/
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
 }
