@@ -64,7 +64,7 @@ section#redes-sociais img {
 
 section#redes-sociais img:hover {
     border: 2px solid white;
-    transform: translate(-2px, -2px); /* isso fará com que os botões se mexam para esquerda e para cima quando passarmos o mouse por cima deles */
+    transform: translate(-5px, -5px); /* isso fará com que os botões se mexam para esquerda e para cima quando passarmos o mouse por cima deles */
     box-shadow: 5px 5px 10px black;
     transition: transform 10s, border 0.5s; /* transition para o transform, para configurar quantos segundos ele vai levar pra fazer o movimento completo de -2px pra esquerda e para cima;
     utilizamos tb um transition para a borda, pra quanto tempo ela leva pra aparecer por completo quando passamos o mouse por cima */
