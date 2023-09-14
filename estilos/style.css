@@ -46,3 +46,26 @@ iframe#tela {
     width: 269px;
     height: 471px;
 }
+
+section#redes-sociais {
+    /* configuração para a section redes sociais, não para as imagens */
+    text-align: right; /* para os links ficarem na direita da tela */
+}
+
+section#redes-sociais img {
+    /* as imagens dentro das redes sociais terão cfgs diferentes */
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%; /* isso quer dizer que vai ocupar metade da imagem: se metade é redonda e a outra tb, ele vai formar um circulo */
+    box-shadow: 5px 5px 10px black;
+    box-sizing: border-box; /* isso faz a borda fazer parte da caixa */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-2px, -2px); /* isso fará com que os botões se mexam para esquerda e para cima quando passarmos o mouse por cima deles */
+    box-shadow: 5px 5px 10px black;
+    transition: transform 10s, border 0.5s; /* transition para o transform, para configurar quantos segundos ele vai levar pra fazer o movimento completo de -2px pra esquerda e para cima;
+    utilizamos tb um transition para a borda, pra quanto tempo ela leva pra aparecer por completo quando passamos o mouse por cima */
+}
